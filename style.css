@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(to right, #dff6ff, #ffffff);
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #00aaff;
+  margin-bottom: 15px;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: #004080;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+nav button {
+  padding: 10px 20px;
+  background: #00aaff;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+nav button:hover {
+  background: #007acc;
+}
+
+.content {
+  display: none;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  animation: fadeIn 0.5s ease-in-out;
+  margin-bottom: 30px;
+}
+
+.content.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  color: #004080;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #00aaff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95rem;
+  color: #777;
+  background: #f0f8ff;
+  border-top: 1px solid #ccc;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav button {
+    width: 100%;
+  }
+}
